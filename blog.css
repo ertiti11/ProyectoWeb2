@@ -1,0 +1,27 @@
+.aficiones {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "div1 div3" "div1 div3" "div2 div4";
+}
+
+.div1 {
+  grid-area: div1;
+  background-color: black;
+}
+
+.div2 {
+  grid-area: div2;
+  background-color: black;
+}
+
+.div3 {
+  grid-area: div3;
+  background-color: black;
+}
+
+.div4 {
+  grid-area: div4;
+  background-color: black;
+}/*# sourceMappingURL=blog.css.map */
