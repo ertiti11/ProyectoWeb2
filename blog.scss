@@ -1,26 +1,180 @@
+/* poppins-latin-400-normal */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/poppins@latest/latin-400-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/poppins@latest/latin-400-normal.woff) format('woff');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+/* poppins-latin-500-normal */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/poppins@latest/latin-500-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/poppins@latest/latin-500-normal.woff) format('woff');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+/* poppins-latin-600-normal */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 600;
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/poppins@latest/latin-600-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/poppins@latest/latin-600-normal.woff) format('woff');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+
+body{
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f5f5f5;
+}
+
+
+main {
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.sobremi{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  width: 400px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  margin: 4em 0 4em 0;
+  padding: 2em;
+  border-radius: 20px;
+}
+
+
+#containerSobremi {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  gap: 1em;
+}
+#imagensobremi {
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+#containerSobremi p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 1rem 0;
+  text-align: center;
+  
+
+}
+
+
+#tituloSobremi {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 2rem 0;
+  text-align: center;
+}
+
 .aficiones {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  gap: 0px 0px;
+  gap: 10px 10px;
   grid-template-areas:
     "div1 div3"
-    "div1 div3"
+    "div1 div4"
     "div2 div4";
+    height: 500px;
 }
+
 .div1 {
   grid-area: div1;
-  background-color: black;
+  background-image: url(./img/gym.jpg);
+  background-size: cover;
+  width: 20em;
+  color: white;
 }
+
 .div2 {
   grid-area: div2;
-  background-color: black;
+  background-image: url(./img/hacking.jpg);
+  background-size: cover;
+  width: 20em;
 }
+
 .div3 {
   grid-area: div3;
-  background-color: black;
+  background-image: url(./img/futbol.jpg);
+  background-size: cover;
+  width: 20em;
 }
+
 .div4 {
   grid-area: div4;
-  background-color: black;
+  background-image: url(./img/hockey.jpg);
+  background-size: cover;
+  width: 20em;
+} /*# sourceMappingURL=blog.css.map */
+
+
+
+.aficiones div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  margin: 0 auto;
+  
+}
+.card {
+  border-radius: 15px!important;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.texto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; /* color del texto */
+  font-size: 16px; /* tamaño de fuente del texto */
+  opacity: 0; /* oculta el texto por defecto */
+  transition: opacity 0.3s ease-in-out; /* agrega una transición para suavizar el cambio de opacidad */
+}
+
+.card:hover{
+  filter: brightness(70%);
+}
+
+.card:hover .texto {
+  opacity: 1; /* muestra el texto al hacer hover sobre la tarjeta */
+}
+
+
+
+.aficiones div h1{
+  color: white;
+}
+
+#carouselExampleIndicators{
+  width: 600px!important;
+  margin-top: 4em!important;
 }
