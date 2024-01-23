@@ -38,8 +38,10 @@ body{
 }
 
 
+
+
 main {
-  max-width: 1000px;
+  max-width: 1200px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -51,7 +53,7 @@ main {
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-  width: 400px;
+  width: 1200px;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
   margin: 4em 0 4em 0;
   padding: 2em;
@@ -101,6 +103,7 @@ main {
     "div1 div4"
     "div2 div4";
     height: 500px;
+  width: 1200px;
 }
 
 .div1 {
@@ -140,6 +143,7 @@ main {
   align-items: center;
   justify-content: end;
   margin: 0 auto;
+  width: 100%;
   
 }
 .card {
