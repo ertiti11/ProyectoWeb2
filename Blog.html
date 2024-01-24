@@ -13,39 +13,85 @@
     />
   </head>
   <body>
+    <div class="container sticky-lg-top w-100">
+      <header id="header-nav" class="d-flex justify-content-center py-3">
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a
+              href="/index.html"
+              class="nav-link active boton"
+              aria-current="page"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="/Blog.html" class="nav-link">Blog</a>
+          </li>
+          <li class="nav-item"><a href="#" class="nav-link">Contacto</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Preguntas</a></li>
+          <li class="nav-item">
+            <a href="/Proyectos.html" class="nav-link">proyectos</a>
+          </li>
+        </ul>
+      </header>
+    </div>
     <main>
       <div class="sobremi">
-        <img id="imagensobremi" src="./img/morty.webp" alt="" />
-        <h1 id="tituloSobremi">TITI</h1>
-
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores
-          dolorem rerum cupiditate asperiores, inventore iure velit porro omnis
-          laboriosam debitis odio blanditiis, nulla nemo ipsa repellendus eum
-          unde? Blanditiis, asperiores.
-        </p>
+        <div class="sobremiContainer container1">
+          <h1 id="tituloSobremi">
+            Hola, Soy Adrian Prieto
+            <span class="emoji"
+              ><img
+                src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/72x72/1f44b.png"
+                alt=""
+            /></span>
+          </h1>
+          <p class="textoHeader">
+            A passionate Full Stack Software Developer 🚀 having an experience
+            of building Web and Mobile applications with JavaScript / Reactjs /
+            Nodejs / React Native and some other cool libraries and frameworks.
+          </p>
+        </div>
+        <div class="sobremiContainer container2">
+          <img
+            id="imagensobremi"
+            src="./img/undraw_developer_activity_re_39tg.svg"
+            alt=""
+          />
+        </div>
       </div>
       <!-- bento grid -->
 
       <div class="aficiones">
         <div class="div1 card">
-          <h1>Gym</h1>
-          <p class="texto">Texto para Gym</p>
+          <h1 class="aficion">Gym</h1>
+          <div class="hover-text">
+            Voy al gym todas las tardes, ya que me ayuda a controlar el estrés.
+          </div>
         </div>
         <div class="div2 card">
-          <h1>Hacking</h1>
-          <p class="texto">Texto para Gym</p>
+          <h1 class="aficion">Hacking</h1>
+          <div class="hover-text">
+            Si, aunque parezca mentira, mi trabajo es también mi hobby, eso se
+            llama tener suerte ¿verdad? ;-)
+          </div>
         </div>
         <div class="div3 card">
-          <h1>Futbol</h1>
-          <p class="texto">Texto para Gym</p>
+          <h1 class="aficion">Futbol</h1>
+          <div class="hover-text">
+            He practicado este deporte durante 14 años de mi vida, y aunque por
+            lesiones que he tenido, siempre será de mis deportes preferidos
+          </div>
         </div>
         <div class="div4 card">
-          <h1>Hockey</h1>
-          <p class="texto">Texto para Gym</p>
+          <h1 class="aficion">Hockey</h1>
+          <div class="hover-text">
+            Sé patinar desde pequeño, pero nunca llegué a jugar al hockey hasta
+            hace poco, desde luego deporte TOP.🔝
+          </div>
         </div>
       </div>
-
+      <!-- carrusel -->
       <div
         id="carouselExampleIndicators"
         class="carousel slide"
@@ -75,12 +121,15 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
+            <h1 class="text-center">Helsinki</h1>
             <img src="./img/helsinki.jpg" class="d-block w-100" alt="..." />
           </div>
           <div class="carousel-item">
+            <h1 class="text-center">Sevilla</h1>
             <img src="./img/sevilla.jpg" class="d-block w-100" alt="..." />
           </div>
           <div class="carousel-item">
+            <h1 class="text-center">Málaga</h1>
             <img src="./img/malaga.jpg" class="d-block w-100" alt="..." />
           </div>
         </div>
@@ -103,11 +152,55 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
+
+      <!-- tabla  -->
+
+      <table class="table table-primary tabla">
+        <thead>
+          <tr>
+            <th scope="col">Proyecto</th>
+            <th scope="col">Tiempo</th>
+            <th scope="col">Lenguaje</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>ClientSync</td>
+            <td>3 meses</td>
+            <td>React & Nodejs</td>
+          </tr>
+          <tr>
+            <td>portfolio</td>
+            <td>1 mes</td>
+            <td>Astrojs</td>
+          </tr>
+          <tr>
+            <td>tienda online</td>
+            <td>1 mes</td>
+            <td>PHP & Mysql</td>
+          </tr>
+        </tbody>
+      </table>
     </main>
+    <div class="container">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
+        <div class="col-md-4 d-flex align-items-center">
+          <a
+            href="/"
+            class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"
+          >
+          </a>
+          <span class="mb-3 mb-md-0">&copy; 2024, Adrian Prieto</span>
+        </div>
+      </footer>
+    </div>
   </body>
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"
   ></script>
+  <script src="./blog.js"></script>
 </html>
